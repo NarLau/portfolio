@@ -1,0 +1,98 @@
+.hero {
+    overflow: hidden;
+    height: 100vh;
+}
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    text-align: center;
+}
+.title h1 {
+    font-size: 36px;
+    font-family: 'Lato', sans-serif;
+    margin-top: 10em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #ffffff;
+    display: block;
+    position: relative;
+    z-index: 3;
+}
+.heroBTN {
+    position: relative;
+    z-index: 3;
+    font-family: 'Lato', sans-serif;
+    border: none;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.heroBTN:hover {
+    transform: scale(1.05); 
+}
+.heroBTN:active {
+    transform: scale(0.95); 
+}
+@keyframes move-twink-back {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -10000px 5000px;
+    }
+}
+@keyframes move-clouds-back {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 10000px 0;
+    }
+}
+.stars,
+.twinkling,
+.clouds {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.stars {
+    background: #000 url(../assets/stars.png) repeat top center;
+    z-index: 0;
+}
+.twinkling {
+    background: transparent url(../assets/twinkling.png) repeat top center;
+    z-index: 1;
+    animation: move-twink-back 200s linear infinite;
+}
+.clouds {
+    background: transparent url(../assets/clouds.png) repeat top center;
+    z-index: 2;
+    opacity: .4;
+    animation: move-clouds-back 200s linear infinite;
+}
+
+@media (prefers-color-scheme: light) {
+    .stars {
+        background: #e6b4b4 url(../assets/stars.png) repeat top center;
+    }
+    .clouds{ 
+        background: transparent url(../assets/dayclouds.png) repeat top center;
+    }
+    .twinkling{
+        background: transparent url(../assets/daytwinkling.png) repeat top center;
+    }
+    .title h1 {
+        color: #000;
+    }
+}

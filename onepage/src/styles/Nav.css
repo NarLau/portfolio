@@ -1,0 +1,100 @@
+.main-nav {
+    display: flex;
+    margin:0;
+}
+
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+  
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 1rem ;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-links li a:hover {
+    background-color: #ecc457d0;
+}
+
+.nav-links li a.active {
+    background-color: #ecc457;
+    color: rgb(255, 255, 255);
+}
+
+
+.nav-glow {
+
+    animation: glowFade 1.5s ease forwards;
+}
+
+
+
+@media (prefers-color-scheme: dark) {
+    .main-nav {
+      
+        color: #b3b3b3;
+    }
+
+    .logo {
+        color: #e0dff5;
+    }
+
+    .menu-toggle {
+        color: #b3b3b3;
+    }
+
+    .nav-links li a {
+        background-color: transparent;
+        color: #b3b3b3;
+    }
+
+    .nav-links li a:hover {
+        background-color: #4d76f367;
+        color: #000000;
+    }
+
+    .nav-links li a.active {
+        background-color: #644e7fec;
+        color: rgb(0, 0, 0);
+    }
+    
+}
+
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 0;
+        display: none;
+        margin-top: 1rem;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .nav-links li a {
+        padding: 1rem;
+        width: 100%;
+        display: block;
+    }
+    
+}
