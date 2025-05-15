@@ -1,4 +1,5 @@
 import "../../styles/Section.css"
+import "../../styles/About.css"
 
 export const About = () => {
     let YHLink = `https://medieinstitutet.se/utbildningar/fullstack-developer/?_gl=1*goda4a*_up*MQ..*_ga*NDM1MzY1NTQ0LjE3NDcwNDc3ODA.*_ga_Z1PFJ3S4H8*czE3NDcwNDc3ODAkbzEkZzEkdDE3NDcwNDc3ODYkajAkbDAkaDI1MzgxMjk3Mw..*_ga_1GR3EKMT4F*czE3NDcwNDc3ODMkbzEkZzEkdDE3NDcwNDc3ODYkajAkbDAkaDA`

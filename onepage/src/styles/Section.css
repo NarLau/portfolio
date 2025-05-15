@@ -1,5 +1,4 @@
 .container {
-    color: #ffffff;
     max-width: 1200px;
     padding-bottom: 5px;
     margin: 0 auto;
@@ -33,7 +32,17 @@
     width:  300px;
 }
 
-
+#about .container:hover .aboutImg,
+#about .container:hover .information {
+    filter: brightness(0.3);
+    transition: filter 0.3s;
+    
+}
+.aboutImg:hover,
+.information:hover {
+    filter: brightness(2) !important;
+    transform: scale(1.05);
+}
 @media (max-width: 768px) {
 .container h2 {
     font-size: 1.5rem;
@@ -45,7 +54,14 @@
 }
 }
 @media (prefers-color-scheme: light) {
-    .container{
-        color: black;
+    #about .container:hover .aboutImg,
+    #about .container:hover .information {
+    filter: brightness(2);
+    transition: filter 0.3s;
     }
+    .aboutImg:hover,
+    .information:hover {
+    filter: brightness(0.3) !important;
+}
+
 }

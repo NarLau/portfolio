@@ -39,9 +39,9 @@ export const Layout = () => {
          <Header />
     </header>
       <main>
-        <section id="hero">
+        <div id="hero">
           <Hero />
-        </section>    
+        </div>    
         <section id="about">
           <About />
         </section>    

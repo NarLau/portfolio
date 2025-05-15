@@ -17,9 +17,9 @@ export const Nav = () => {
             ☰
           </button>
           <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
-          <li><a href="#hero">To the stars</a></li>
+          <li><a href="#">To the sky</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#skills">My Skills</a></li>
           </ul>     
       </div>
   </nav>
