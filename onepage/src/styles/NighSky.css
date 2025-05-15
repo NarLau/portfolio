@@ -82,17 +82,25 @@
     animation: move-clouds-back 200s linear infinite;
 }
 
-@media (prefers-color-scheme: light) {
-    .stars {
-        background: #e6b4b4 url(../assets/stars.png) repeat top center;
+@media (prefers-color-scheme: light) {    
+    .stars{
+        background: radial-gradient(125% 125% at 50% 10%, #fff 40%, #3355ee 100%);
     }
-    .clouds{ 
-        background: transparent url(../assets/dayclouds.png) repeat top center;
+    .clouds{
+        background: transparent url("../assets/dayclouds.png");
+        animation: move-clouds-back 300s linear infinite;
+    }
+    .twinkling {
+        display: none;
     }
     .twinkling{
-        background: transparent url(../assets/daytwinkling.png) repeat top center;
+        display: none;
     }
     .title h1 {
         color: #000;
+    }
+    .title h1,
+    .heroBTN {
+    transition: text-shadow 0.1s ease, box-shadow 0.1s ease;
     }
 }

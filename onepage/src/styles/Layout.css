@@ -49,7 +49,7 @@ section {
   background-image: url("../assets/linkedInDark.svg");
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   .github {
     background-image: url("../assets/githubBlue.svg");
     opacity: 80%;
@@ -57,5 +57,15 @@ section {
 
   .linkedIn {
     background-image: url("../assets/linkedinBlue.svg");
+  }
+  .odd {
+      background-color:rgba(51, 110, 238, 0.233);
+  }
+  .even {
+      background-color:rgba(51, 110, 238, 0.345);
+    }
+
+   .fot {
+    background-color: rgba(44, 106, 241, 0.422);
   }
 }
