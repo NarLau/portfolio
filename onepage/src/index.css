@@ -2,11 +2,12 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  color-scheme: light dark;
+  color-scheme: dark light ;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 a {
@@ -46,7 +47,7 @@ button:hover {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
+    color: #0f1d28;
     background-color: #ffffff;
   }
   a:hover {
@@ -56,3 +57,18 @@ button:hover {
     button:hover {
       border-color: #6516aab7; }
 }
+[data-theme="light"] {
+  color: #0f1d28;
+  background-color: #ffffff;
+}
+
+[data-theme="dark"]  {
+  color: #fff;
+  background-color: #181832;
+}
+
+[data-theme="dark"] button:hover {
+  border-color: #8ab4f8;
+  background-color: #23234a;
+}
+

@@ -30,6 +30,7 @@
 #about .aboutImg {
     height: 300px;
     width:  300px;
+    background-color: rgb(34, 34, 34);
 }
 
 #about .container:hover .aboutImg,
@@ -63,5 +64,14 @@
     .information:hover {
     filter: brightness(0.3) !important;
 }
+}
+[data-theme="light"] #about .container:hover .aboutImg,
+[data-theme="light"] #about .container:hover .information {
+    filter: brightness(2);
+    transition: filter 0.3s;
+}
 
+[data-theme="light"] .aboutImg:hover,
+[data-theme="light"] .information:hover {
+    filter: brightness(0.3) !important;
 }

@@ -20,24 +20,23 @@
 
 .nav-links li a {
     text-decoration: none;
-    color: #333;
+    color: #000000;
     font-weight: bold;
     padding: 1rem ;
     transition: background-color 0.3s, color 0.3s;
 }
 
 .nav-links li a:hover {
-    background-color: #ecc457d0;
+    background-color: #fde39a95;
 }
 
 .nav-links li a.active {
-    background-color: #ecc457;
-    color: rgb(255, 255, 255);
+    background-color: #fde39a69;
+    color: rgb(0, 0, 0);
 }
 
 
 .nav-glow {
-
     animation: glowFade 1.5s ease forwards;
 }
 
@@ -47,10 +46,6 @@
     .main-nav {
       
         color: #b3b3b3;
-    }
-
-    .logo {
-        color: #e0dff5;
     }
 
     .menu-toggle {
@@ -68,7 +63,7 @@
     }
 
     .nav-links li a.active {
-        background-color: #644e7fec;
+        background-color: #4d77f337;
         color: rgb(0, 0, 0);
     }
     
@@ -97,4 +92,50 @@
         display: block;
     }
     
+}
+[data-theme="dark"] .main-nav {
+    color: #b3b3b3;
+}
+
+[data-theme="dark"] .menu-toggle {
+    color: #b3b3b3;
+}
+
+[data-theme="dark"] .nav-links li a {
+    background-color: transparent;
+    color: #b3b3b3;
+}
+
+[data-theme="dark"] .nav-links li a:hover {
+    background-color: #4d76f367;
+    color: #000000;
+}
+
+[data-theme="dark"].nav-links li a.active {
+    background-color: #4d77f337;
+    color: rgb(0, 0, 0);
+}
+
+
+
+[data-theme="light"] .main-nav {
+    color: #b3b3b3;
+}
+
+[data-theme="light"] .menu-toggle {
+    color: #333;
+}
+
+[data-theme="light"] .nav-links li a {
+    background-color: transparent;
+    color: #000000;
+}
+
+[data-theme="light"] .nav-links li a:hover {
+    background-color: #fde39a95;
+}
+
+[data-theme="light"].nav-links li a.active {
+    background-color: #fde39a69;
+        color: rgb(0, 0, 0);
 }

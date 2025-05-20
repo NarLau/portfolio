@@ -33,6 +33,14 @@ main>section.odd {
   width: 100%;
   z-index: 1000;
 }
+.header .theme-toggle {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 10;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  border: none;
+}
 .fot {
   position: absolute;
   width: 100%;
@@ -53,17 +61,16 @@ main>section.odd {
 }
 
 .github {
-  background-image: url("../assets/githubDark.svg");
+  background-image: url("../assets/githubBlue.svg");
 }
 
 .linkedIn {
-  background-image: url("../assets/linkedInDark.svg");
+  background-image: url("../assets/linkedinBlue.svg");
 }
 
 @media (prefers-color-scheme: light) {
   .github {
-    background-image: url("../assets/githubBlue.svg");
-    opacity: 80%;
+  background-image: url("../assets/githubBlue.svg");
   }
 
   .linkedIn {
@@ -83,4 +90,57 @@ main>section.odd {
    .fot {
     background-color: rgba(44, 106, 241, 0.422);
   }
+}
+[data-theme="light"] .github {
+  background-image: url("../assets/githubBlue.svg");
+  opacity: 80%;
+}
+
+[data-theme="light"] .linkedIn {
+  background-image: url("../assets/linkedinBlue.svg");
+}
+
+[data-theme="light"] main > section:not(#hero) {
+  background-color: rgb(181, 208, 248);
+}
+
+[data-theme="light"] main > section.odd {
+  background-color: #a3a9ff !important;
+}
+
+[data-theme="light"] main > section.even {
+  background-color: #a3c0ff !important;
+}
+
+[data-theme="light"] .fot {
+  background-color: rgba(44, 106, 241, 0.422);
+}
+[data-theme="light"] .theme-toggle{
+  color: black;
+}
+
+[data-theme="dark"] .github {
+  background-image: url("../assets/githubBlue.svg");  opacity: 80%;
+}
+
+[data-theme="dark"] .linkedIn {
+  background-image: url("../assets/linkedinBlue.svg");}
+
+[data-theme="dark"] main > section:not(#hero) {
+  background-color: none;
+}
+
+[data-theme="dark"] main > section.odd {
+  background-color: #181832 !important;
+}
+
+[data-theme="dark"] main > section.even {
+  background-color: #2d2d58 !important;
+}
+
+[data-theme="dark"] .fot {
+  background-color: #181832;}
+
+[data-theme="dark"] .theme-toggle {
+  color: white;
 }
