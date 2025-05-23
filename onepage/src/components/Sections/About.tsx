@@ -1,18 +1,17 @@
 import "../../styles/Section.css"
-import "../../styles/About.css"
+
 
 export const About = () => {
-    let YHLink = `https://medieinstitutet.se/utbildningar/fullstack-developer/?_gl=1*goda4a*_up*MQ..*_ga*NDM1MzY1NTQ0LjE3NDcwNDc3ODA.*_ga_Z1PFJ3S4H8*czE3NDcwNDc3ODAkbzEkZzEkdDE3NDcwNDc3ODYkajAkbDAkaDI1MzgxMjk3Mw..*_ga_1GR3EKMT4F*czE3NDcwNDc3ODMkbzEkZzEkdDE3NDcwNDc3ODYkajAkbDAkaDA`
-
     return(
         <div className="container">
             <div className="aboutImg"></div>
             <div className="information">
                 <h2>Michelle, the Structured one</h2>
-                <p>Hi,i am a Fullstack developer student from <a href={YHLink} target="_blank">Medieinstitutet</a></p>
-                <p>PHP, Node.js, Javascript, Typescipt, React, Css and SaaS</p>
-                <p>Problemsolving, Structure, Willingness to lern</p>
-                <p>I enjoy puzzles, music and a nice walk.</p>
+                <p>I'm a fullstack developer student at Medieinstitutet with a passion for building clean, functional websites that solve real problems. I enjoy turning ideas into streamlined, user-friendly web experiences — making sure both the frontend and backend work seamlessly together.</p>
+                <br></br>
+                <p className="baby">I approach each project with curiosity and a practical mindset. I like figuring out what makes a system run smoothly and how to design something that feels intuitive to use. Whether it's setting up a solid database or fine-tuning the details of a layout, I focus on building things that are both useful and lasting.</p>
+                <br></br>
+                <p>Collaboration is a big part of how I work. I listen, ask questions, and care about understanding your goals so I can help bring them to life in a way that makes sense for your business. If you're looking for someone thoughtful, reliable, and hands-on, I'm ready to jump in.</p>               
             </div>
         </div>
     )
