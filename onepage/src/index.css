@@ -29,7 +29,9 @@ body {
   min-height: 100vh;
 }
 
-
+ul {
+  list-style: none;
+}
 button {
   border-radius: 8px;
 

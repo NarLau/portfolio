@@ -48,7 +48,71 @@
     filter: brightness(2) !important;
     transform: scale(1.05);
 }
+#skills .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 30px;
+    gap: 20px;
 
+}
+#skills ul {
+    padding-left: 0;
+}
+#skills .container .all-skills{
+    display:flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 1rem;
+    
+}
+#skills .frontend-skills,#skills .backend-skills{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    align-items: center;
+    background-color: #0000001a;
+    box-shadow: 1px 1px 7px 1px;
+}
+
+#skills li {
+    list-style: none;
+    padding-bottom: 1rem;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+#skills li:hover {
+    transform: scale(1.05);
+    z-index: 2;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;  
+}
+
+.description {
+    display: flex;
+    z-index: 5;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    pointer-events: none;
+    padding-left: 1rem;
+}
+
+#skills li:hover .description {
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+}
+.liaBTN {
+    width: 6rem; 
+}
 
 @media (max-width: 768px) {
 .container h2 {

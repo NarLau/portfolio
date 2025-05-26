@@ -19,6 +19,7 @@ main>section:not(#hero) {
 section {
   width: 100%;
   height: 100%;
+  padding-bottom: 10px;
 }
  main>section.even{
     background-color: #2d2d58 !important;;
@@ -41,6 +42,8 @@ main>section.odd {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   border: none;
 }
+
+
 .fot {
   position: absolute;
   width: 100%;
@@ -67,6 +70,9 @@ main>section.odd {
 .linkedIn {
   background-image: url("../assets/linkedinBlue.svg");
 }
+.skillBTN {
+  display: flex;
+  justify-self: center; }
 
 @media (prefers-color-scheme: light) {
   .github {

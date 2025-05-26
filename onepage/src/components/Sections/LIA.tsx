@@ -1,7 +1,6 @@
 import "../../styles/Section.css"
-
-
 export const LIA = () => {
+    
     return(
         <div className="container">
             <h2>LOOKING FOR INTERNSHIP FALL 2025</h2>
